@@ -1,0 +1,288 @@
+<http://localhost/ontologies#personasPersonas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#subClassof>.
+<http://localhost/ontologies#personasPersonas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasPersonas> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/foaf>.
+<http://localhost/ontologies#personasPersonas> <http://www.w3.org/2000/01/rdf-schema#label> "Autores".
+<http://localhost/ontologies#personasPersonas> <http://www.w3.org/2000/01/rdf-schema#comment> "Tabla de la informacion basica del Autores".
+<http://localhost/ontologies#personasNamePersona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#personasNamePersona> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasNamePersona> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Name>.
+<http://localhost/ontologies#personasNamePersona> <http://www.w3.org/2000/01/rdf-schema#label> "Nombres y Apellidos del Autor".
+<http://localhost/ontologies#universidadUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadUniversity> <http://www.w3.org/2000/01/rdf-schema#label> "University".
+<http://localhost/ontologies#universidadUniversity> <http://www.w3.org/2000/01/rdf-schema#comment> "Universidad del OCW".
+<http://localhost/ontologies#universidadName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadName> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre".
+<http://localhost/ontologies#universidadName> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre de la Universidad del OCW".
+<http://localhost/ontologies#universidadDBPedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadDBPedia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadDBPedia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadDBPedia> <http://www.w3.org/2000/01/rdf-schema#label> "DBPedia".
+<http://localhost/ontologies#universidadDBPedia> <http://www.w3.org/2000/01/rdf-schema#comment> "DBPedia Names de la Universidad del OCW".
+<http://localhost/ontologies#universidadMemberOF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadMemberOF> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadMemberOF> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadMemberOF> <http://www.w3.org/2000/01/rdf-schema#label> "MemberOF".
+<http://localhost/ontologies#universidadMemberOF> <http://www.w3.org/2000/01/rdf-schema#comment> "MemberOF de la Universidad del OCW".
+<http://localhost/ontologies#universidadNameEN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadNameEN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadNameEN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadNameEN> <http://www.w3.org/2000/01/rdf-schema#label> "NombreEN".
+<http://localhost/ontologies#universidadNameEN> <http://www.w3.org/2000/01/rdf-schema#comment> "NombreEN de la Universidad del OCW".
+<http://localhost/ontologies#universidadNameES> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadNameES> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadNameES> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadNameES> <http://www.w3.org/2000/01/rdf-schema#label> "NombreES".
+<http://localhost/ontologies#universidadNameES> <http://www.w3.org/2000/01/rdf-schema#comment> "NombreES de la Universidad del OCW".
+<http://localhost/ontologies#universidadUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadUrl> <http://www.w3.org/2000/01/rdf-schema#label> "Url".
+<http://localhost/ontologies#universidadUrl> <http://www.w3.org/2000/01/rdf-schema#comment> "Url de la Universidad del OCW".
+<http://localhost/ontologies#universidadLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "Language".
+<http://localhost/ontologies#universidadLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "Language de la Universidad del OCW".
+<http://localhost/ontologies#universidadMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#universidadMap> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidadMap> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#universidadMap> <http://www.w3.org/2000/01/rdf-schema#label> "Map".
+<http://localhost/ontologies#universidadMap> <http://www.w3.org/2000/01/rdf-schema#comment> "Map de la Universidad del OCW".
+<http://localhost/ontologies#ocwCursos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://localhost/ontologies#ocwCursos> <http://www.w3.org/2000/01/rdf-schema#label> "Curso".
+<http://localhost/ontologies#ocwCursos> <http://www.w3.org/2000/01/rdf-schema#comment> "Informacion del curso OCW".
+<http://localhost/ontologies#ocwName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwName> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre del OCW".
+<http://localhost/ontologies#ocwName> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre del OCW".
+<http://localhost/ontologies#ocwDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Description".
+<http://localhost/ontologies#ocwDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripcion del OCW".
+<http://localhost/ontologies#ocwAutorCurso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwAutorCurso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwLibros>.
+<http://localhost/ontologies#ocwAutorCurso> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/creator>.
+<http://localhost/ontologies#ocwAutorCurso> <http://www.w3.org/2000/01/rdf-schema#label> "Autor".
+<http://localhost/ontologies#ocwAutorCurso> <http://www.w3.org/2000/01/rdf-schema#comment> "Autor o autores del Curso".
+<http://localhost/ontologies#ocwLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwLink> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwLink> <http://www.w3.org/2000/01/rdf-schema#label> "Link".
+<http://localhost/ontologies#ocwLink> <http://www.w3.org/2000/01/rdf-schema#comment> "Link del OCW".
+<http://localhost/ontologies#ocwTags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwTags> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwTags> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwTags> <http://www.w3.org/2000/01/rdf-schema#label> "Tags".
+<http://localhost/ontologies#ocwTags> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de etiquetas que describen el OCW".
+<http://localhost/ontologies#ocwKnowlegdeArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwKnowlegdeArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwKnowlegdeArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwKnowlegdeArea> <http://www.w3.org/2000/01/rdf-schema#label> "KnowlegdeArea".
+<http://localhost/ontologies#ocwLicenseInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwLicenseInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwLicenseInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwLicenseInformation> <http://www.w3.org/2000/01/rdf-schema#label> "LicenseInformation".
+<http://localhost/ontologies#ocwUniversidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwUniversidad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwUniversidad> <http://www.w3.org/2000/01/rdf-schema#range> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#ocwUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Universidad".
+<http://localhost/ontologies#ocwDBPUniversity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDBPUniversity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDBPUniversity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDBPUniversity> <http://www.w3.org/2000/01/rdf-schema#label> "DBPUniversity".
+<http://localhost/ontologies#ocwDBPContinent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDBPContinent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDBPContinent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDBPContinent> <http://www.w3.org/2000/01/rdf-schema#label> "DBPContinent".
+<http://localhost/ontologies#ocwDBPCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDBPCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDBPCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDBPCountry> <http://www.w3.org/2000/01/rdf-schema#label> "DBPCountry".
+<http://localhost/ontologies#ocwDBPCapital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDBPCapital> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDBPCapital> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDBPCapital> <http://www.w3.org/2000/01/rdf-schema#label> "DBPCapital".
+<http://localhost/ontologies#ocwDBPState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDBPState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDBPState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDBPState> <http://www.w3.org/2000/01/rdf-schema#label> "DBPState".
+<http://localhost/ontologies#ocwDBPCities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDBPCities> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDBPCities> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDBPCities> <http://www.w3.org/2000/01/rdf-schema#label> "DBPCities".
+<http://localhost/ontologies#ocwDBPCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://localhost/ontologies#ocwDBPCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwDBPCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://localhost/ontologies#ocwDBPCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "DBPCurrency".
+<http://localhost/ontologies#personasprsn_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_001> <http://localhost/ontologies#personasNamePersona> "Luis Antonio Boza Prieto".
+<http://localhost/ontologies#personasprsn_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_002> <http://localhost/ontologies#personasNamePersona> "Antonio Jesús Cañete Martín".
+<http://localhost/ontologies#personasprsn_003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_003> <http://localhost/ontologies#personasNamePersona> "Pedro García Vázquez".
+<http://localhost/ontologies#personasprsn_004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_004> <http://localhost/ontologies#personasNamePersona> "Carmen León Vela".
+<http://localhost/ontologies#personasprsn_005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_005> <http://localhost/ontologies#personasNamePersona> "Patricia Kisbye".
+<http://localhost/ontologies#personasprsn_006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_006> <http://localhost/ontologies#personasNamePersona> "Rocio Gonzaléz Díaz".
+<http://localhost/ontologies#personasprsn_007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_007> <http://localhost/ontologies#personasNamePersona> "Pedro Real Jurado".
+<http://localhost/ontologies#personasprsn_008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_008> <http://localhost/ontologies#personasNamePersona> "Francisco Javier Cobos Gavala".
+<http://localhost/ontologies#personasprsn_009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_009> <http://localhost/ontologies#personasNamePersona> "Eduardo Martín Novo".
+<http://localhost/ontologies#personasprsn_010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_010> <http://localhost/ontologies#personasNamePersona> "Alfredo Méndez Alonso".
+<http://localhost/ontologies#personasprsn_011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_011> <http://localhost/ontologies#personasNamePersona> "Carmen Ortiz Martínez".
+<http://localhost/ontologies#personasprsn_012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#personasPersonas>.
+<http://localhost/ontologies#personasprsn_012> <http://localhost/ontologies#personasNamePersona> "Juana Sendra Pons".
+<http://localhost/ontologies#universidaduniv_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadName> "Universidad de Sevilla".
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadDBPedia> "University of Seville*Universität Sevilla*Universidad de Sevilla*Sevillan yliopisto*Université de Séville*Università di Siviglia*セビリア大学*Universiteit van Sevilla*Universitetet i Sevilla*Universidade de Sevilha*Сevильский униveрситeт".
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadMemberOF> "Open CourseWare Consortium".
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadNameEN> "University of Seville".
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadNameES> "Universidad de Sevilla".
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadUrl> "http://www.us.es/".
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadLanguage> "Spanish".
+<http://localhost/ontologies#universidaduniv_001> <http://localhost/ontologies#universidadMap> "Google Maps".
+<http://localhost/ontologies#universidaduniv_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadName> "Universidad Nacional de Córdoba".
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadDBPedia> "Nationale Universität Cordoba*Universidad Nacional de Córdoba*Université nationale de Córdoba*コルドバ大学*National University of Córdoba*Universidade Nacional de Córdoba*国立科尔多瓦大学".
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadMemberOF> "Universia".
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadUniversityEN> "National University of Córdoba".
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadUniversityES> "Universidad Nacional de Córdoba".
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadUniversityUrl> "http://www.unc.edu.ar/".
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadUniversityLanguage> "Spanish".
+<http://localhost/ontologies#universidaduniv_002> <http://localhost/ontologies#universidadUniversityMap> "https://maps.google.com/maps?f=d&source=s_q&hl=en&geocode=%3BCQGLCUefF_DcFURNIP4daJIs_A&q=University(OCW+map)%40-31.4375,-64.1878&ie=UTF8&t=m&hq=&hnear=&ll=-31.433643,-64.187794&spn=0.012816,0.018239&z=15&vpsrc=0&iwloc=A&daddr=University+(OCW+map)".
+<http://localhost/ontologies#universidaduniv_003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#universidadUniversity>.
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadName> "Universidad Politécnica de Madrid".
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadDBPedia> "Technical University of Madrid*Polytechnische Universität Madrid*Universidad Politécnica de Madrid*Madridin Tekninen yliopisto*Université polytechnique de Madrid*Universidade Politécnica de Madrid".
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadMemberOF> "Open CourseWare Consortium*universia".
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadUniversityEN> "Technical University of Madrid".
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadUniversityES> "Universidad Politécnica de Madrid".
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadUniversityUrl> "http://www.upm.es/".
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadUniversityLanguage> "Spanish".
+<http://localhost/ontologies#universidaduniv_003> <http://localhost/ontologies#universidadUniversityMap> "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=University(OCW+map)%40-3.988769,-79.198185&ie=UTF8&z=15&t=m&iwloc=near".
+<http://localhost/ontologies#ocwocw_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwName> "Matemáticas II".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDescription> "no course description".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwLink> "http://ocwus.us.es/matematica-aplicada/pp-1".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwTags> "matematica aplicada*superficies* métricas* resueltos* orden* representación* mapple* geometrias* sistemas* lineales* matemática aplicada* curvas* aplicaciones* problemas* variables* constantes* coeficientes* curvatura* prácticas* diferenciales".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwKnowlegdeArea> "Matemática Aplicada".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwLicenseInformation> "Creative Commons Attribution-NonCommercial-ShareAlike 2.5 [ http://creativecommons.org/licenses/by-nc-sa/2.5/ ]".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDBPUniversity> "http://dbpedia.org/resource/University_of_Seville".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDBPContinent> "http://dbpedia.org/resource/Europe".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDBPCountry> "http://dbpedia.org/resource/Spain".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDBPCapital> "http://dbpedia.org/resource/Madrid".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDBPState> "no information".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDBPCities> "http://dbpedia.org/resource/Seville".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwDBPCurrency> "http://dbpedia.org/resource/Euro".
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwUniversidad> <http://localhost/ontologies#universidaduniv_001>.
+<http://localhost/ontologies#ocwocw_001> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_001>.
+<http://localhost/ontologies#ocwocw_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwName> "Introducción al Cálculo Infinitesimal".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDescription> "no course description".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwLink> "http://ocwus.us.es/matematica-aplicada/pp".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwTags> "matematica aplicada*l`hopital* diferenciabilidad* taylor* riemann* matriz* integral* lagrange* gradiente* optimización* polinomio* límite* matemática aplicada* derivación* absoluto* teorema* derivabilidad* variable* relativo* funciones* barrow".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwKnowlegdeArea> "Matemática Aplicada".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwLicenseInformation> "Creative Commons Attribution-NonCommercial-ShareAlike 2.5 [ http://creativecommons.org/licenses/by-nc-sa/2.5/ ]".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDBPUniversity> "http://dbpedia.org/resource/University_of_Seville".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDBPContinent> "http://dbpedia.org/resource/Europe".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDBPCountry> "http://dbpedia.org/resource/Spain".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDBPCapital> "http://dbpedia.org/resource/Madrid".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDBPState> "no information".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDBPCities> "http://dbpedia.org/resource/Seville".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwDBPCurrency> "http://dbpedia.org/resource/Euro".
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwUniversidad> <http://localhost/ontologies#universidaduniv_001>.
+<http://localhost/ontologies#ocwocw_002> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_002>.
+<http://localhost/ontologies#ocwocw_003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwName> "Matemáticas II".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDescription> "Curso de matemáticas aplicadas a la Arquitectura, con especial énfasis en la geometría diferencial y en la resolución de problemas asociados a ecuaciones y sistemas diferenciales".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwLink> "http://ocwus.us.es/matematica-aplicada/matematicas-ii".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwTags> "matematica aplicada*matemática aplicada* ecuaciones diferenciales ordinarias* sistemas diferenciales* geometría diferencial".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwKnowlegdeArea> "Matemática Aplicada".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwLicenseInformation> "Creative Commons Attribution-NonCommercial-ShareAlike 2.5 [ http://creativecommons.org/licenses/by-nc-sa/2.5/ ]".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDBPUniversity> "http://dbpedia.org/resource/University_of_Seville".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDBPContinent> "http://dbpedia.org/resource/Europe".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDBPCountry> "http://dbpedia.org/resource/Spain".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDBPCapital> "http://dbpedia.org/resource/Madrid".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDBPState> "no information".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDBPCities> "http://dbpedia.org/resource/Seville".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwDBPCurrency> "http://dbpedia.org/resource/Euro".
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwUniversidad> <http://localhost/ontologies#universidaduniv_001>.
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_003>.
+<http://localhost/ontologies#ocwocw_003> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_004>.
+<http://localhost/ontologies#ocwocw_004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwName> "Álgebra I - Matematica Discreta I".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDescription> "Materia de primer año, cuatrimestral, común a todas las carreras de FAMAF.".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwLink> "http://ocw.unc.edu.ar/facultad-de-matematica-astronomia-y-fisica/algebra-i-matematica-discreta-i".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwTags> "álgebra*algoritmos*conteo*grafos*números enteros*números naturales*números primos*números reales".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwKnowlegdeArea> "Facultad de Matematica Astronomia y Fisica".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwLicenseInformation> "Creative Commons Attribution-NonCommercial-ShareAlike 2.5 [ http://creativecommons.org/licenses/by-nc-sa/2.5/ar/ ]".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDBPUniversity> "http://dbpedia.org/resource/National_University_of_C%C3%B3rdoba".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDBPContinent> "http://dbpedia.org/resource/Latin_America".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDBPCountry> "http://dbpedia.org/resource/Argentina".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDBPCapital> "http://dbpedia.org/resource/Buenos_Aires".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDBPState> "no information".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDBPCities> "http://dbpedia.org/resource/C%C3%B3rdoba,_Argentina".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwDBPCurrency> "no information".
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwUniversidad> <http://localhost/ontologies#universidaduniv_002>.
+<http://localhost/ontologies#ocwocw_004> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_005>.
+<http://localhost/ontologies#ocwocw_005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwName> "Procesamiento de Imágenes Digitales".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDescription> "En la Escuela Técnica Superior de Ingeniería Informática y en especial en nuestro Departamento de Matemática Aplicada I, existe un interés muy alto por las aplicaciones gráficas del ordenador. Son varias las asignaturas de segundo ciclo ofertadas en esta línea, teniéndose una continuación en tercer ciclo. La Topología Digital, nacida a principio de los años setenta, es el estudio de las propiedades topológicas de las imágenes digitales. Este área de estudio proporciona la fundamentación teórica para importantes operaciones de procesamiento de imágenes tales como: etiquetado y enumeración de componentes, detección de bordes, adelgazamiento, etc.".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwLink> "http://ocwus.us.es/matematica-aplicada/procesamiento-de-imagenes-digitales".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwTags> "matematica aplicada*matemática aplicada".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwKnowlegdeArea> "Matemática Aplicada".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwLicenseInformation> "Creative Commons Attribution-NonCommercial-ShareAlike 2.5 [ http://creativecommons.org/licenses/by-nc-sa/2.5/ ]".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDBPUniversity> "http://dbpedia.org/resource/University_of_Seville".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDBPContinent> "http://dbpedia.org/resource/Europe".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDBPCountry> "http://dbpedia.org/resource/Spain".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDBPCapital> "http://dbpedia.org/resource/Madrid".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDBPState> "no information".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDBPCities> "http://dbpedia.org/resource/Seville".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwDBPCurrency> "http://dbpedia.org/resource/Euro".
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwUniversidad> <http://localhost/ontologies#universidaduniv_001>.
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_006>.
+<http://localhost/ontologies#ocwocw_005> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_007>.
+<http://localhost/ontologies#ocwocw_006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwName> "Álgebra Numérica".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDescription> "En este curso se pretende ver la necesidad del uso del ordenador para la resolución de los problemas que se tratan en la asignatura comprendiendo la dificultad, desde el punto de vista numérico, que conllevan. Haciendo uso de la representación de funciones, dominar el campo de convergencia de los procedimientos iterados que se empleen. Dominar los métodos de resolución de sistemas de ecuaciones lineales así como el mal o bien condicionamiento del problema a solventar. Dominar los métodos estables de resolución en mínimos cuadrados de sistemas incompatibles. Dominar los métodos de resolución del cálculo de autovalores y autovectores de endomorfismos, así como el mal o bien condicionamiento del problema a solventar.".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwLink> "http://ocwus.us.es/matematica-aplicada/algebra-numerica".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwTags> "matematica aplicada*matemática aplicada* álgebra* métodos numéricos".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwKnowlegdeArea> "Matemática Aplicada".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwLicenseInformation> "Creative Commons Attribution-NonCommercial-ShareAlike 2.5 [ http://creativecommons.org/licenses/by-nc-sa/2.5/ ]".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDBPUniversity> "http://dbpedia.org/resource/University_of_Seville".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDBPContinent> "http://dbpedia.org/resource/Europe".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDBPCountry> "http://dbpedia.org/resource/Spain".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDBPCapital> "http://dbpedia.org/resource/Madrid".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDBPState> "no information".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDBPCities> "http://dbpedia.org/resource/Seville".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwDBPCurrency> "http://dbpedia.org/resource/Euro".
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwUniversidad> <http://localhost/ontologies#universidaduniv_001>.
+<http://localhost/ontologies#ocwocw_006> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_008>.
+<http://localhost/ontologies#ocwocw_007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://localhost/ontologies#ocwCursos>.
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwName> "Matemática Discreta".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDescription> "La asignatura de Matemática Discreta pretende añadir una formación complementaria del aprendizaje de los alumnos que estudian las diferentes titulaciones que se imparten en la Universidad Politécnica de Madrid, sobre algunos aspectos que no se tratan suficientemente en asignaturas de los actuales planes de estudio y que, como la mayoría de las asignaturas de Matemáticas, les proporciona el ser competentes para modelizar situaciones que se plantean tanto en otras disciplinas de la titulación como en su vida profesional.".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwLink> "http://ocw.upm.es/matematica-aplicada/matematica-discreta".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwTags> "aritmética modular*combinatoria*ecuaciones en diferencias*matemática aplicada*teoría de grafos*teoría de números".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwKnowlegdeArea> "Matemática Aplicada".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwLicenseInformation> "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 [ http://creativecommons.org/licenses/by-nc-sa/3.0/ ]".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDBPUniversity> "http://dbpedia.org/page/Technical_University_of_Madrid".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDBPContinent> "http://dbpedia.org/resource/Europe".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDBPCountry> "http://dbpedia.org/resource/Spain".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDBPCapital> "http://dbpedia.org/resource/Madrid".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDBPState> "no information".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDBPCities> "http://dbpedia.org/resource/Madrid".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwDBPCurrency> "no information".
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwUniversidad> <http://localhost/ontologies#universidaduniv_003>.
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_009>.
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_010>.
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_011>.
+<http://localhost/ontologies#ocwocw_007> <http://localhost/ontologies#ocwAutorCurso> <http://localhost/ontologies#personasprsn_012>.
