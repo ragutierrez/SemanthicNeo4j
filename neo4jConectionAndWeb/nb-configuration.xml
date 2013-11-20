@@ -14,5 +14,7 @@ That way multiple projects can share the same settings (useful for formatting ru
 Any value defined here will override the pom.xml file value but is only applicable to the current project.
 -->
         <netbeans.hint.j2eeVersion>1.7-web</netbeans.hint.j2eeVersion>
+        <org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>ide</org-netbeans-modules-maven-jaxws.rest_2e_config_2e_type>
+        <org-netbeans-modules-maven-jaxws.test_2e_client_2e_project>/home/ragutierrez/NetBeansProjects/GitNeo4jConection/neo4jConectionAndWeb</org-netbeans-modules-maven-jaxws.test_2e_client_2e_project>
     </properties>
 </project-shared-configuration>

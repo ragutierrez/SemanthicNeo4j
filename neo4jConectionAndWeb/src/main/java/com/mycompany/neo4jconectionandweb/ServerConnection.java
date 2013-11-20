@@ -20,28 +20,16 @@ public class ServerConnection {
     final String SERVER_ROOT_URI = "http://localhost:7474/db/data/";
     final String nodeEntryPointUri = SERVER_ROOT_URI + "node/";
 
-//    public static void main(String[] args) {
-////        try {
-//        ServerConnection objConn = new ServerConnection();
-//        objConn.initServer();
-//        objConn.serverStatus();
-//        objConn.query("http://localhost/ontologies#personasPersonas");
-//
-////            URI firstNode = objConn.createNode();
-////            objConn.addProperty(firstNode, "name", "Joe Strummer");
-////            URI secondNode = objConn.createNode();
-////            objConn.addProperty(secondNode, "band", "The Clash");
-////
-////            URI relationshipUri = objConn.addRelationship(firstNode, secondNode, "singer",
-////                    "{ \"from\" : \"1976\", \"until\" : \"1986\" }");
-////
-////            objConn.addMetadataToProperty(relationshipUri, "stars", "5");
-////
-////        } catch (URISyntaxException ex) {
-////            Logger.getLogger(ServerConnection.class.getName()).log(Level.SEVERE, null, ex);
-////        }
-//
-//    }
+    public void serverStatus() {
+        WebResource resource = Client.create()
+                .resource(SERVER_ROOT_URI);
+        ClientResponse response = resource.get(ClientResponse.class);
+
+//        System.out.println(String.format("GET on [%s], status code [%d]",
+//                SERVER_ROOT_URI, response.getStatus()));
+        response.close();
+    }
+
     public void initServer() {
         String array[];
         String reqUri = SERVER_ROOT_URI + "index/auto/node/properties";
@@ -53,12 +41,7 @@ public class ServerConnection {
                 .type(MediaType.APPLICATION_JSON)
                 .get(ClientResponse.class);
 
-//        System.out.println(String.format("POST to [%s], status code [%d]",
-//                reqUri, response.getStatus()));
-//
-//        System.out.println("properties:");
         String responseText = response.getEntity(String.class);
-//        System.out.println(responseText);
 
         if (responseText.length() > 3) {
             array = responseText
@@ -67,9 +50,9 @@ public class ServerConnection {
 
             for (String indexPropertieName : array) {
                 String indexPropertieNameTrimed = indexPropertieName.trim();
-                System.out.println(
-                        indexPropertieNameTrimed
-                        .substring(1, indexPropertieNameTrimed.length() - 1));
+//                System.out.println(
+//                        indexPropertieNameTrimed
+//                        .substring(1, indexPropertieNameTrimed.length() - 1));
             }
         } else {
             reqUri = SERVER_ROOT_URI + "index/node/";
@@ -88,21 +71,7 @@ public class ServerConnection {
                     .type(MediaType.APPLICATION_JSON)
                     .entity(JSONReq)
                     .post(ClientResponse.class);
-
-//            System.out.println("Añadido");
-//            System.out.println(response.getEntity(String.class));
         }
-
-        response.close();
-    }
-
-    public void serverStatus() {
-        WebResource resource = Client.create()
-                .resource(SERVER_ROOT_URI);
-        ClientResponse response = resource.get(ClientResponse.class);
-
-        System.out.println(String.format("GET on [%s], status code [%d]",
-                SERVER_ROOT_URI, response.getStatus()));
         response.close();
     }
 
@@ -128,7 +97,32 @@ public class ServerConnection {
 
         response.close();
 
-//        System.out.println(JSON);
+        return JSON;
+
+    }
+
+    public String queryLike(String name) {
+        String JSON;
+        String cypherUri = SERVER_ROOT_URI + "cypher";
+        String query = "start n=node:node_auto_index('name:*" + name + "*') retun n AS nodes";
+
+        String cypherStatement =
+                "{"
+                + "\"query\" : \"" + query + "\""
+                + "}";
+
+        WebResource resource = Client.create()
+                .resource(cypherUri);
+
+        ClientResponse response = resource.accept(MediaType.APPLICATION_JSON)
+                .type(MediaType.APPLICATION_JSON)
+                .entity(cypherStatement)
+                .post(ClientResponse.class);
+
+        JSON = response.getEntity(String.class);
+
+        response.close();
+
         return JSON;
 
     }
@@ -152,6 +146,29 @@ public class ServerConnection {
     }
 
     /**
+     *
+     * NOT USED
+     *
+     * private void addMetadataToProperty(URI relationshipUri, String name,
+     * String value) throws URISyntaxException { URI propertyUri = new
+     * URI(relationshipUri.toString() + "/properties"); String entity =
+     * toJsonNameValuePairCollection(name, value); WebResource resource =
+     * Client.create() .resource(propertyUri); ClientResponse response =
+     * resource.accept(MediaType.APPLICATION_JSON)
+     * .type(MediaType.APPLICATION_JSON) .entity(entity)
+     * .put(ClientResponse.class);
+     *
+     * System.out.println(String.format( "PUT [%s] to [%s], status code [%d]",
+     * entity, propertyUri, response.getStatus())); response.close(); }
+     *
+     *
+     * private String toJsonNameValuePairCollection(String name, String value) {
+     * return String.format("{ \"%s\" : \"%s\" }", name, value); }
+     *
+     *
+     *
+     *
+     *
      *
      * NOT USED
      *
@@ -209,28 +226,6 @@ public class ServerConnection {
         return location;
     }
 
-    /**
-     *
-     * NOT USED
-     *
-     * private void addMetadataToProperty(URI relationshipUri, String name,
-     * String value) throws URISyntaxException { URI propertyUri = new
-     * URI(relationshipUri.toString() + "/properties"); String entity =
-     * toJsonNameValuePairCollection(name, value); WebResource resource =
-     * Client.create() .resource(propertyUri); ClientResponse response =
-     * resource.accept(MediaType.APPLICATION_JSON)
-     * .type(MediaType.APPLICATION_JSON) .entity(entity)
-     * .put(ClientResponse.class);
-     *
-     * System.out.println(String.format( "PUT [%s] to [%s], status code [%d]",
-     * entity, propertyUri, response.getStatus())); response.close(); }
-     *
-     *
-     * private String toJsonNameValuePairCollection(String name, String value) {
-     * return String.format("{ \"%s\" : \"%s\" }", name, value); }
-     *
-     *
-     */
     private String generateJsonRelationship(URI endNode,
             String relationshipType) {
         StringBuilder sb = new StringBuilder();
@@ -245,5 +240,15 @@ public class ServerConnection {
 
 //        System.out.println(sb.toString());
         return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        ServerConnection objConn = new ServerConnection();
+        objConn.initServer();
+        objConn.serverStatus();
+//        String result = objConn.query("http://localhost/ontologies#personasPersonas");
+        String result = objConn.queryLike("Universidad");
+
+        System.out.println(result);
     }
 }

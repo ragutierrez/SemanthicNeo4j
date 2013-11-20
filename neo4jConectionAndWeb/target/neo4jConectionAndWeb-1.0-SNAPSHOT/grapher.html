@@ -19,8 +19,14 @@
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/vivagraph.min.js"></script>
         <script type="text/javascript" src="js/grapher.js"></script>
+        <script src="js/waitUntilExists.js"></script>
         <script>
             $("#menu").load("plantillas/menu.html");
+        </script>
+        <script>
+            waitUntilExists("menuGrapher", function(){
+                $("#menuGrapher").addClass("active");
+            });
         </script>
     </body>
 </html>

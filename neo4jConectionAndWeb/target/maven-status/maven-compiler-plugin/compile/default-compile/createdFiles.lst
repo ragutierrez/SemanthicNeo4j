@@ -1,4 +1,9 @@
+com/mycompany/services/ItemResourceImpl.class
+com/mycompany/neo4jconectionandweb/JSON_Reader.class
+com/mycompany/services/ApplicationConfig.class
+com/mycompany/services/ItemResource.class
+com/mycompany/services/Item.class
 com/mycompany/neo4jconectionandweb/ServerConnection.class
 com/mycompany/neo4jconectionandweb/TripleReader.class
-com/mycompany/neo4jconectionandweb/JSON_Reader.class
+com/mycompany/services/ServiceResource.class
 com/mycompany/neo4jconectionandweb/test.class

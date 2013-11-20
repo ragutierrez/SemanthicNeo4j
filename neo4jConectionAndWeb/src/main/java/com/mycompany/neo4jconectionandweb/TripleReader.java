@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.neo4jconectionandweb;
 
 import java.io.BufferedReader;
@@ -13,10 +9,6 @@ import java.net.URISyntaxException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author ragutierrez
- */
 public class TripleReader {
 
     ServerConnection objServConn = new ServerConnection();
@@ -105,10 +97,10 @@ public class TripleReader {
         URI uriNodo2 = hacerNodo(nameNodo2);
         String relationshipType = line.split("> <|>.")[1];
 
-        System.out.println("sujeto: "+(line.split("> <|>."))[0]);
-        System.out.println("predicado: "+(line.split("> <|>."))[1]);
-        System.out.println("objeto: "+(line.split("> <|>."))[2]);
-        
+        System.out.println("sujeto: " + (line.split("> <|>."))[0]);
+        System.out.println("predicado: " + (line.split("> <|>."))[1]);
+        System.out.println("objeto: " + (line.split("> <|>."))[2]);
+
         hacerRelacion(uriNodo1, uriNodo2, relationshipType);
     }
 }
